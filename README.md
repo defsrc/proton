@@ -18,11 +18,11 @@ If it does not, this text will be rewritten and become less whimsy.
 
 # Background
 
-Protobuf supports only 4 low level ways to encode data (all little endian):
+Protobuf supports only 4 low level ways to encode data - all little endian:
 * `varint`
 * `uint64`
 * `uint32`
-* `varint` encoded length followed by `[]byte`
+* `varint` encoded length followed by `[]byte` (in Go parlance)
 
 These are used to encode 18 different types. Most of those are encoded as varints.
 
